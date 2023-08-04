@@ -1,0 +1,12 @@
+CREATE TABLE clothing (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, price INTEGER);
+INSERT INTO clothing VALUES (1, "Shirts", 3, 6);
+INSERT INTO clothing VALUES (2, "Shoes", 2, 10);
+INSERT INTO clothing VALUES (3, "Pants", 5, 12);
+INSERT INTO clothing VALUES (4, "Skirts", 2, 8);
+INSERT INTO clothing VALUES (5, "Accessories", 3, 4);
+
+SELECT SUM(quantity) FROM clothing;
+SELECT SUM(price) FROM clothing;
+SELECT * FROM clothing;
+SELECT * FROM clothing ORDER BY (price) asc;
+SELECT * FROM clothing ORDER BY (quantity) desc;
